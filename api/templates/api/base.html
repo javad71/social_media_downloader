@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Social Media Downloader</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="description" content="Social Media Downloader - Save content from various platforms">
+  <meta name="keywords" content="social media, downloader, save content, LinkedIn, Twitter, Instagram, Youtube, Tiktok, video download">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .header-container {
+      background-color: #54a7de;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .header-logo {
+      height: 40px;
+    }
+
+    .header-title {
+      font-size: 32px;
+      margin: 0;
+    }
+
+    .content-container {
+      padding: 20px;
+    }
+
+    .card {
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .card-title {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .post-image {
+      max-width: 100%;
+      height: 300px;
+    }
+
+    .sidebar-container {
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar-title {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .sidebar-text {
+      margin-bottom: 15px;
+    }
+
+    .advertisement {
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer-frame {
+      background-color: #99bdd5;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer-frame p {
+      margin-bottom: 10px;
+    }
+
+    .footer-frame a {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header class="header-container">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-md-2">
+            <img src="https://via.placeholder.com/100x100" alt="Logo" class="header-logo">
+          </div>
+          <div class="col-md-6">
+            <h1 class="header-title">Social Media Downloader</h1>
+          </div>
+        </div>
+      </div>
+  </header>
+
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-3">
+        <div class="sidebar-container">
+          <h3 class="sidebar-title">About Social Media Downloader</h3>
+          <p class="sidebar-text">Social Media Downloader is a tool that allows you to save content from various social media platforms such as LinkedIn, Twitter, Instagram, Youtube, and Tiktok.</p>
+          <p class="sidebar-text">To download content, follow these steps:</p>
+          <ol class="sidebar-text">
+            <li>Copy the URL of the post you want to download.</li>
+            <li>Paste the URL in the corresponding input field.</li>
+            <li>Click the "Submit" button.</li>
+            <li>Once the post details are displayed, you can download the video by clicking on the "Download" link.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="advertisement">
+          <img src="https://via.placeholder.com/600x200" alt="Advertisement banner" class="img-fluid">
+        </div>
+        {% block request_title %}
+        {% endblock %}
+        <div class="advertisement">
+          <img src="https://via.placeholder.com/600x200" alt="Advertisement banner" class="img-fluid">
+        </div>
+        {% block request_content %}
+        {% endblock %}
+        <div class="advertisement">
+          <img src="https://via.placeholder.com/600x200" alt="Advertisement banner" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="sidebar-container">
+          <h3 class="sidebar-title">Other Downloaders</h3>
+          <ul class="list-group">
+            <li class="list-group-item"><a href="instagram.html" target="_blank">Instagram Downloader</a></li>
+            <li class="list-group-item"><a href="youtube.html" target="_blank">Youtube Downloader</a></li>
+            <li class="list-group-item"><a href="tiktok.html" target="_blank">Tiktok Downloader</a></li>
+            <li class="list-group-item"><a href="twitter.html" target="_blank">Twitter Downloader</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-light py-5 footer-frame">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>About Us</h3>
+          <p>We are a social media downloader that helps you save content from various platforms.</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Contact Us</h3>
+          <p>Email: info@example.com</p>
+          <p>Phone: +1234567890</p>
+          <p>Address: 123 Street, City, Country</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Follow Us</h3>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-12">
+          <p>&copy; 2023 Social Media Downloader. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+</body>
+</html>

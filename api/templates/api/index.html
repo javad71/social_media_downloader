@@ -1,0 +1,26 @@
+{% extends './base.html' %}
+
+{% block request_title %}
+    <div class="card">
+      <div class="card-body">
+        <form action="http://127.0.0.1:8000/api/linkedin/" method="POST">
+          <div class="mb-3">
+            <label for="link" class="form-label">LinkedIn Post URL</label>
+            <input type="text" class="form-control" id="link" name="link">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+{% endblock %}
+
+{% block request_content %}
+    <div class="card mt-3">
+      <div class="card-body">
+        <h5 class="card-title">Post Details</h5>
+        <p class="card-text"><strong>Author Name:</strong> {{ author_name }} <span id="author_name"></span></p>
+        <p class="card-text"><strong>Post Content:</strong> {{ post_content }} <span id="post_content"></span></p>
+        <p class="card-text"><strong>Video:</strong> <a href="{{ video_url }}" download="video.mp4">Download</a> <span id="video_url"></span></p>
+      </div>
+    </div>
+{% endblock %}
