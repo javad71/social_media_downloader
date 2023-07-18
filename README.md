@@ -1,4 +1,4 @@
-# social_media_downloader
+# social media downloader
 This repository contains a Django project that allows you to download videos from social media platforms like LinkedIn, Instagram, Twitter, TikTok, and YouTube.
 
 ## Requirements
