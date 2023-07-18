@@ -11,14 +11,14 @@ This repository contains a Django project that allows you to download videos fro
 ## Installation
   - Clone the repository
   - Install the requirements
-    -- pip install -r requirements.txt
+    - pip install -r requirements.txt
     
   - Create a virtual environment and activate it
-    -- python -m venv venv
-    -- source venv/bin/activate
+    - python -m venv venv
+    - source venv/bin/activate
 
   - Run the project
-    -- python manage.py runserver
+    - python manage.py runserver
 
 ## Usage
   Go to the website in your browser
